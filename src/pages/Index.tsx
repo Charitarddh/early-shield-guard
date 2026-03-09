@@ -10,8 +10,8 @@ import {
   ThreatLevel,
   generateNormalActivity,
   generateSuspiciousActivity,
-  runDetection,
-} from "@/lib/simulation";
+  runDetection } from
+"@/lib/simulation";
 import { Play, Square, RotateCcw, Shield } from "lucide-react";
 
 const Index = () => {
@@ -86,19 +86,19 @@ const Index = () => {
             <Shield className="w-7 h-7 text-primary" />
             <div>
               <h1 className="text-xl font-bold tracking-tight">Ransomware Early Warning System</h1>
-              <p className="text-xs text-muted-foreground">Android Device Behavioral Monitor</p>
+              <p className="text-xs text-muted-foreground">Android Device Behavioral Monitor-ELEXCENTRA</p>
             </div>
           </div>
           <div className="flex gap-2">
-            {!running ? (
-              <Button onClick={start} size="sm" className="gap-1.5">
+            {!running ?
+            <Button onClick={start} size="sm" className="gap-1.5">
                 <Play className="w-3.5 h-3.5" /> Start
-              </Button>
-            ) : (
-              <Button onClick={stop} size="sm" variant="destructive" className="gap-1.5">
+              </Button> :
+
+            <Button onClick={stop} size="sm" variant="destructive" className="gap-1.5">
                 <Square className="w-3.5 h-3.5" /> Stop
               </Button>
-            )}
+            }
             <Button onClick={reset} size="sm" variant="outline" className="gap-1.5">
               <RotateCcw className="w-3.5 h-3.5" /> Reset
             </Button>
@@ -117,8 +117,8 @@ const Index = () => {
           <AlertPanel alerts={alerts} />
         </div>
       </div>
-    </div>
-  );
+    </div>);
+
 };
 
 export default Index;
